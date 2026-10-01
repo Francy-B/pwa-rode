@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useAuth } from '../AuthContext.jsx'
 import InstalarPWA from '../components/InstalarPWA.jsx'
+import logoRode from '../assets/logo-rode.webp'
 
 const Candado = () => (
   <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -42,7 +43,7 @@ export default function Login() {
   return (
     <main className="pantalla login">
       <header className="login-marca">
-        <h1>RODE</h1>
+        <img src={logoRode} alt="RODE Patisserie — hecho con amor, para ti" className="login-logo" />
       </header>
 
       <form onSubmit={enviar} noValidate>

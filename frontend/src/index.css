@@ -35,21 +35,7 @@ body {
 /* ---------- Login ---------- */
 .login { display: flex; flex-direction: column; justify-content: center; gap: 36px; }
 .login-marca { text-align: center; }
-.login-marca h1 {
-  margin: 0;
-  font-family: var(--fuente-titulo);
-  font-size: 52px;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  color: var(--oscuro);
-}
-.login-marca p {
-  margin: 6px 0 0;
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 0.32em;
-  color: var(--cafe);
-}
+.login-logo { width: 240px; max-width: 72%; height: auto; }
 
 form { display: flex; flex-direction: column; }
 label { font-size: 18px; font-weight: 600; margin: 0 0 10px; }
