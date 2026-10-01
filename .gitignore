@@ -1,0 +1,10 @@
+node_modules/
+.env
+.DS_Store
+
+# Documentos de trabajo (tesis, entrevista, mockups): no van al repositorio público.
+CLAUDE.md
+*.pdf
+*.pages
+*.doc
+*.docx
