@@ -42,7 +42,7 @@ export default function Login() {
   return (
     <main className="pantalla login">
       <header className="login-marca">
-        <h1>RODE</h1>
+        <h1>Lorena</h1>
       </header>
 
       <form onSubmit={enviar} noValidate>
