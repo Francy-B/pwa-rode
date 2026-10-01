@@ -257,8 +257,13 @@ input:focus-visible { outline: 2px solid var(--cafe); outline-offset: 2px; }
 .lista-encabezado h2 { margin: 0; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; color: var(--suave); }
 .pildora { padding: 5px 12px; border-radius: 999px; background: #ebe6e0; font-size: 13px; font-weight: 600; color: var(--suave); }
 
-.chips { display: flex; gap: 10px; margin-bottom: 18px; }
+.chips {
+  display: flex; gap: 10px; margin-bottom: 18px;
+  overflow-x: auto; scrollbar-width: none;
+}
+.chips::-webkit-scrollbar { display: none; }
 .chip {
+  flex: none;
   height: 42px; padding: 0 22px;
   border: 1px solid var(--borde); border-radius: 999px;
   background: var(--blanco); color: var(--texto);
