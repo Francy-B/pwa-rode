@@ -1,5 +1,4 @@
-// Cliente mínimo para hablar con el backend. La cookie de sesión viaja sola
-// (mismo origen), por eso no hay que manejar ningún token aquí.
+
 export async function api(ruta, { method = 'GET', cuerpo } = {}) {
   const res = await fetch(`/api${ruta}`, {
     method,
