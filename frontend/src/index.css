@@ -54,6 +54,8 @@ input {
 }
 input::placeholder { color: #b1a7a1; }
 input:focus-visible { outline: 2px solid var(--cafe); outline-offset: 2px; }
+/* Safari de iPhone dibuja el campo de fecha con su propio ancho y se sale de la tarjeta. */
+input[type='date'] { -webkit-appearance: none; appearance: none; display: block; min-width: 0; max-width: 100%; }
 
 .campo-password { position: relative; }
 .campo-password input { padding: 0 60px 0 58px; }
