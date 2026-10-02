@@ -4,6 +4,7 @@ import { useAuth } from '../AuthContext.jsx'
 import { NotificacionesProvider, useNotificaciones } from '../NotificacionesContext.jsx'
 import Icono from './Iconos.jsx'
 import CambiarPassword from './CambiarPassword.jsx'
+import logoRode from '../assets/logo-rode.webp'
 
 const SECCIONES = [
   { a: '/', texto: 'Inicio', icono: 'inicio', fin: true },
@@ -43,7 +44,7 @@ function ContenidoLayout() {
     <div className="app">
       <aside className="lateral">
         <div className="lateral-marca">
-          <strong>RODE</strong>
+          <img src={logoRode} alt="RODE Patisserie" className="lateral-logo" />
         </div>
         <nav className="lateral-nav">
           <Enlaces clase="enlace" conAviso={criticos > 0} />
